@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playwrite+VN:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Playwrite+IN:wght@100..400&family=Playwrite+VN:wght@100..400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+body h1{
+  background-image: linear-gradient(135deg, #f783ac 32%, #4dabf7 42%, #4dabf7 49%, #ffd43b 60%);
+  padding-bottom: 100px;
+  font-family: lobster;
+  font-size: 6em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+
+}
+.buttons{
+  border-radius: 50%;
+  border: solid white;
+  margin: 30px;
+
+}
+.icons{
+  border-radius: 75px;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+
+}
+.reset-icon{
+  height: 30px;
+}
+
+.js-result{
+  font-size: 3em;
+  font-family: "Lobster", serif;
+  background-image: linear-gradient(135deg, #a9e34b 37%, #f783ac 41%, #f783ac 42%, #4dabf7 44%, #ffa94d 45%, #ffd43b 46%, #ced4da 46%, #3bc9db 48%, #da77f2 50%, #4dabf7 52%, #ff8787 52%, #f783ac 53%, #ff8787 54%, #3bc9db 56%, #9775fa 58%, #da77f2 61%, #38d9a9 64%, #ffd43b 92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.choices{
+  font-size: 2em;
+  font-family: "Lobster", serif;
+  background-image: linear-gradient(135deg, #ffa94d 42%, #9775fa 45%, #9775fa 47%, #3bc9db 50%, #f783ac 54%, #ffd43b 57%, #38d9a9 59%, #3bc9db 60%, #a9e34b 69%);
+  -webkit-background-clip: text;
+  padding-top: 30px;
+
+}
+
+.scores{
+  font-size: 3em;
+  font-family: "Lobster", serif;
+  background-image: linear-gradient(135deg, #ffa94d 42%, #9775fa 45%, #9775fa 47%, #3bc9db 50%, #f783ac 54%, #ffd43b 57%, #38d9a9 59%, #3bc9db 60%, #a9e34b 69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 20px;
+}
