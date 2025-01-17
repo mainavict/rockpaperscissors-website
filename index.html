@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>
-Rock Paper Scissors
+  Rock Paper Scissors version2
 </title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,18 +11,16 @@ Rock Paper Scissors
 </head>
 <body >
   <div class="title">
-  <h1>Rock Paper Scissors</h1>
+  <h1>Rock Paper Scissors version.2.0</h1>
 </div>
   <button onclick="Rock()" class="buttons"><img src="images/Rock.jpg" alt="" class="icons"></button>
   <button onclick="Paper()"  class="buttons"><img src="images/Paper.jpg" alt="" class="icons"></button>
   <button onclick="Scissors()"  class="buttons"><img src="images/Scissors.jpg" alt="" class="icons"></button>
-  <button onclick="reset()" class="buttons"><img src="images/reset.png" alt="" class="reset-icon"></button>
   <p class="js-result"> </p>
   <p class="js-choices choices"></p>
   <p class="js-scores scores"></p>
-
-
-
+  <button onclick="reset()" class="buttons"><img src="images/reset.png" alt="" class="reset-icon"></button>
+  <button class="js-autoplay autoplay" onclick=" autoplay();" >AUTO PLAY</button>
   <script src="rockpaperscissors.js">
   </script>
 </body>
