@@ -122,10 +122,39 @@ let playerschoice = '';
 
       document.querySelector('.js-result').innerHTML= `${result}`
       document.querySelector('.js-scores').innerHTML= `wins: ${results.wins}  loses: ${results.loses} ties: ${results.ties}`
-      document.querySelector('.js-choices').innerHTML= `You:    <img src="images/${playerschoice}.jpg" class="icons">  computer: <img src="images/${computerchoice}.jpg" class="icons">`
+      document.querySelector('.js-choices').innerHTML= `You:<img src="images/${playerschoice}.jpg" class="icons">  computer: <img src="images/${computerchoice}.jpg" class="icons">`
       
       
     }
+
+
+    let isAutoPlaysing= false;
+    let intervalid;
+    function autoplay(){
+      if (!isAutoPlaysing){
+       intervalid =setInterval(function(){
+        playerschoice = computerpicknum();
+        computerchoice= computerpicknum();
+        compair(playerschoice, computerchoice);
+        console.log(playerschoice,computerchoice)
+        display();
+        save();
+        console.log(isAutoPlaysing);
+        },1000);
+        console.log(isAutoPlaysing);
+        isAutoPlaysing = true;
+        console.log(isAutoPlaysing);
+      }
+      else {
+        clearInterval(intervalid);
+        console.log(isAutoPlaysing);
+        isAutoPlaysing = false;
+        console.log(isAutoPlaysing);
+      }
+      
+    }
+
+    
 
 
     
