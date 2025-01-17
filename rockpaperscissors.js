@@ -153,8 +153,3 @@ let playerschoice = '';
       }
       
     }
-
-    
-
-
-    
