@@ -144,12 +144,14 @@ let playerschoice = '';
         console.log(isAutoPlaysing);
         isAutoPlaysing = true;
         console.log(isAutoPlaysing);
+        document.querySelector('.js-autoplay').innerHTML='STOP AUTOPLAY';
       }
       else {
         clearInterval(intervalid);
         console.log(isAutoPlaysing);
         isAutoPlaysing = false;
         console.log(isAutoPlaysing);
+        document.querySelector('.js-autoplay').innerHTML='AUTOPLAY';
       }
       
     }
